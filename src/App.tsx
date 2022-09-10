@@ -5,9 +5,7 @@ import ScrollToTopRoute from './components/ScrollTopRoute';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Faq from './pages/Faq';
-import Home1 from './pages/Home1';
-import Home2 from './pages/Home2';
-import Home3 from './pages/Home3';
+import Home from './pages/Home2';
 import News from './pages/News';
 import NewsDetails from './pages/NewsDetails';
 import ProjectDetails from './pages/ProjectDetails';
@@ -22,17 +20,17 @@ function App() {
       <Router>
         <ScrollToTopRoute />
         <Routes>
-          <Route element={<Home2 />} path='/'></Route>
-          <Route element={<About />} path='/about'></Route>
-          <Route element={<Team />} path='/team'></Route>
-          <Route element={<Faq />} path='/faq'></Route>
-          <Route element={<Projects />} path='/projects'></Route>
-          <Route element={<Services />} path='/services'></Route>
-          <Route element={<ServicesDetails />} path='/services-details'></Route>
-          <Route element={<ProjectDetails />} path='/project-details'></Route>
-          <Route element={<News />} path='/news'></Route>
-          <Route element={<NewsDetails />} path='/news-details'></Route>
-          <Route element={<Contact />} path='/contact'></Route>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/team' element={<Team />} />
+          <Route path='/faq' element={<Faq />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/services-details' element={<ServicesDetails />} />
+          <Route path='/project-details' element={<ProjectDetails />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/news-details' element={<NewsDetails />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
       <ScrollIndicator />

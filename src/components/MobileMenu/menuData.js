@@ -2,73 +2,73 @@ import React from 'react';
 import { CgChevronDown, CgChevronLeft } from 'react-icons/cg';
 
 const menuData = [
-    {
-        title: 'Home',
+  {
+    title: 'Home',
+    path: '/',
+    iconClosed: <CgChevronLeft />,
+    iconOpened: <CgChevronDown />,
+
+    subNav: [
+      {
+        title: 'Home One',
         path: '/',
-        iconClosed: <CgChevronLeft />,
-        iconOpened: <CgChevronDown />,
-
-        subNav: [
-            {
-                title: 'Home One',
-                path: '/',
-            },
-            {
-                title: 'Home Two',
-                path: '/home-2',
-            },
-
-            {
-                title: 'Home Three',
-                path: '/home-3',
-            },
-        ],
-    },
-
-    {
-        title: 'About',
-        path: '/about',
-    },
-
-    {
-        title: 'Pages',
+      },
+      {
+        title: 'Home Two',
         path: '/',
+      },
 
-        iconClosed: <CgChevronLeft />,
-        iconOpened: <CgChevronDown />,
+      {
+        title: 'Home Three',
+        path: '/home-3',
+      },
+    ],
+  },
 
-        subNav: [
-            {
-                title: 'Team',
-                path: '/team',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Faq',
-                path: '/faq',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Projects',
-                path: '/projects',
-            },
-        ],
-    },
+  {
+    title: 'About',
+    path: '/about',
+  },
 
-    {
-        title: 'Services',
-        path: '/services',
-    },
+  {
+    title: 'Pages',
+    path: '/',
 
-    {
-        title: 'News',
-        path: '/news',
-    },
+    iconClosed: <CgChevronLeft />,
+    iconOpened: <CgChevronDown />,
 
-    {
-        title: 'Contact',
-        path: '/contact',
-    },
+    subNav: [
+      {
+        title: 'Team',
+        path: '/team',
+        cName: 'sub-nav',
+      },
+      {
+        title: 'Faq',
+        path: '/faq',
+        cName: 'sub-nav',
+      },
+      {
+        title: 'Projects',
+        path: '/projects',
+      },
+    ],
+  },
+
+  {
+    title: 'Services',
+    path: '/services',
+  },
+
+  {
+    title: 'News',
+    path: '/news',
+  },
+
+  {
+    title: 'Contact',
+    path: '/contact',
+  },
 ];
 
 export default menuData;

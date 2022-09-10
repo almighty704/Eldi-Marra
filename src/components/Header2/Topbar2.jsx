@@ -55,10 +55,10 @@ function Topbar2() {
           </div>
           <div className='col-lg-4 pl-lg-0 col-12 justify-content-between justify-content-lg-end d-flex align-items-center'>
             <div className='social_link mr-20'>
-              <a href='/home-2'>
+              <a href='/'>
                 <FaFacebookF />
               </a>
-              <a href='/home-2'>
+              <a href='/'>
                 <FaTwitter />
               </a>
               <a href='home-2'>
