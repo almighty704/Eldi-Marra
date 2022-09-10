@@ -20,12 +20,6 @@ function WidPages() {
         <li>
           <Link to='/contact'>Contact</Link>
         </li>
-        <li>
-          <Link to='/team'>Pricing</Link>
-        </li>
-        <li>
-          <Link to='/about'>Insights</Link>
-        </li>
       </ul>
     </div>
   );

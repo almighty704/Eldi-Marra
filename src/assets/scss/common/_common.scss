@@ -32,8 +32,8 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     right: 100px;
-    background-image: url("../../img/icon/right-arrow.png");
-    background-color: #febc35;
+    background-image: url('../../img/icon/right-arrow.png');
+    background-color: #00ff62;
 
     @media (max-width: 575px) {
       right: 10px;
@@ -43,8 +43,8 @@
   .swiper-button-prev {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-image: url("../../img/icon/left-arrow.png");
-    background-color: #ffc54f;
+    background-image: url('../../img/icon/left-arrow.png');
+    background-color: #00ff62;
     @media (max-width: 575px) {
       right: 70px;
     }
@@ -52,7 +52,7 @@
 
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    content: "";
+    content: '';
   }
 }
 
@@ -69,7 +69,7 @@
   }
 
   .swiper-pagination-bullet-active {
-    background-color: #ffc54f !important;
+    background-color: #00ff62 !important;
   }
 
   .swiper-button-next,
@@ -95,19 +95,19 @@
 
   .swiper-button-next {
     right: 0px;
-    background-image: url("../../img/icon/right-arrow.png");
-    background-color: #febc35;
+    background-image: url('../../img/icon/right-arrow.png');
+    background-color: #00ff62;
   }
 
   .swiper-button-prev {
     left: 0px;
-    background-image: url("../../img/icon/left-arrow.png");
-    background-color: #ffc54f;
+    background-image: url('../../img/icon/left-arrow.png');
+    background-color: #00ff62;
   }
 
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    content: "";
+    content: '';
   }
 }
 
@@ -188,7 +188,7 @@
 .service-details-wrapper {
   .accordion {
     &__button {
-      background-color: #ffc54f;
+      background-color: #00ff62;
 
       &::before {
         color: white;
@@ -200,7 +200,7 @@
     }
 
     &__item {
-      background-color: #ffc54f;
+      background-color: #00ff62;
       margin-bottom: 10px;
     }
   }
@@ -210,7 +210,7 @@
   .accordion__button {
     color: #001248;
     &:hover {
-      color: #ffc54f;
+      color: #00ff62;
     }
   }
 }

@@ -276,13 +276,14 @@ header {
 
     .container-fluid {
       padding: 0;
+      padding-right: 40px;
     }
 
     .logo {
       display: inline-block;
       position: relative;
       padding: 30px;
-      padding-left: 20px;
+      padding-left: 40px;
 
       @media (max-width: 991px) {
         padding: 20px !important;

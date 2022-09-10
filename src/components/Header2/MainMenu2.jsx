@@ -35,7 +35,7 @@ function MainMenu2() {
                       <Link to='/about'>About</Link>
                     </li>
                     <li>
-                      <Link to='/'>Pages</Link>
+                      <a>Pages</a>
                       <ul className='sub-menu'>
                         <li>
                           <Link to='/team'>team</Link>
