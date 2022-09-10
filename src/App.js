@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollIndicator from './components/ScrollIndicator';
 import ScrollToTopRoute from './components/ScrollTopRoute';
 import About from './pages/About';
@@ -17,55 +17,29 @@ import ServicesDetails from './pages/ServicesDetails';
 import Team from './pages/Team';
 
 function App() {
-    return (
-        <>
-            <Router>
-                <ScrollToTopRoute />
-                <Switch>
-                    <Route exact path="/home-2">
-                        <Home2 />
-                    </Route>
-                    <Route exact path="/home-3">
-                        <Home3 />
-                    </Route>
-                    <Route exact path="/about">
-                        <About />
-                    </Route>
-                    <Route exact path="/team">
-                        <Team />
-                    </Route>
-                    <Route exact path="/faq">
-                        <Faq />
-                    </Route>
-                    <Route exact path="/projects">
-                        <Projects />
-                    </Route>
-                    <Route exact path="/services">
-                        <Services />
-                    </Route>
-                    <Route exact path="/services-details">
-                        <ServicesDetails />
-                    </Route>
-                    <Route exact path="/project-details">
-                        <ProjectDetails />
-                    </Route>
-                    <Route exact path="/news">
-                        <News />
-                    </Route>
-                    <Route exact path="/news-details">
-                        <NewsDetails />
-                    </Route>
-                    <Route exact path="/contact">
-                        <Contact />
-                    </Route>
-                    <Route exact path="/">
-                        <Home1 />
-                    </Route>
-                </Switch>
-            </Router>
-            <ScrollIndicator />
-        </>
-    );
+  return (
+    <>
+      <Router>
+        <ScrollToTopRoute />
+        <Routes>
+          <Route path='/home-2' element={<Home2 />} />
+          <Route path='/home-3' element={<Home3 />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/team' element={<Team />} />
+          <Route path='/faq' element={<Faq />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/services-details' element={<ServicesDetails />} />
+          <Route path='/project-details' element={<ProjectDetails />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/news-details' element={<NewsDetails />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/' element={<Home1 />} />
+        </Routes>
+      </Router>
+      <ScrollIndicator />
+    </>
+  );
 }
 
 export default App;
