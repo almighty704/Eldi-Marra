@@ -8,20 +8,16 @@ import SkillSet from '../components/SkillSet';
 import TeamMembers from '../components/TeamMembers';
 
 function Team() {
-  return (
-    <>
-      <Header1 />
-      <PageBanner
-        bannerBg={bannerBg}
-        heading='Our Expert Team'
-        currentPage='Team'
-      />
-      <TeamMembers />
-      <SkillSet />
-      <Portfolio1 />
-      <Footer1 />
-    </>
-  );
+    return (
+        <>
+            <Header1 />
+            <PageBanner bannerBg={bannerBg} heading="Our Expert Team" currentPage="Team" />
+            <TeamMembers />
+            <SkillSet />
+            <Portfolio1 />
+            <Footer1 />
+        </>
+    );
 }
 
 export default Team;
